@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Sasi Kiran — Software Engineer, incoming MSc Computer Science and Engineering student at DTU." />
+  <title>Saladi SasiKiran | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--panel:#111a2e;--panel2:#141f36;--text:#edf2ff;--muted:#a5b2cc;--line:rgba(173,192,230,.15);--accent:#79e0d2;--accent2:#8ba7ff;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(74,104,190,.17),transparent 34%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 42px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 1.1rem "Space Grotesk";letter-spacing:-.04em}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:26px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--accent)}
+    .menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:10px}
+    .hero{padding:105px 0 92px;display:grid;grid-template-columns:1.35fr .65fr;gap:65px;align-items:center}
+    .eyebrow{color:var(--accent);font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700}
+    h1,h2,h3{font-family:"Space Grotesk";line-height:1.15;letter-spacing:-.04em}h1{font-size:clamp(2.8rem,7vw,5.4rem);margin:18px 0 22px}h1 .gradient{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:660px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border-radius:12px;font-weight:700;font-size:.92rem;border:1px solid var(--line);transition:.2s}
+    .btn.primary{background:var(--accent);color:#08131b;border-color:transparent}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+    .hero-card{border:1px solid var(--line);border-radius:24px;padding:26px;background:linear-gradient(145deg,rgba(21,32,56,.95),rgba(14,21,38,.8));box-shadow:0 20px 70px rgba(0,0,0,.22)}
+    .monogram{width:76px;height:76px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08131b;font:700 1.65rem "Space Grotesk";margin-bottom:20px}
+    .hero-card h3{font-size:1.2rem;margin:0 0 7px}.hero-card p{color:var(--muted);font-size:.9rem;margin:0}
+    .mini{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:14px;margin-top:18px;font-size:.84rem}.mini span{color:var(--muted)}
+    section{padding:78px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}
+    h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0}.section-intro{max-width:500px;color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{padding:25px;border:1px solid var(--line);border-radius:18px;background:rgba(17,26,46,.72)}.card:hover{border-color:rgba(121,224,210,.45)}
+    .card-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.tag{font-size:.75rem;color:var(--accent);background:rgba(121,224,210,.09);border:1px solid rgba(121,224,210,.2);padding:5px 9px;border-radius:99px;white-space:nowrap}
+    h3{font-size:1.28rem;margin:12px 0 8px}.card p{color:var(--muted);margin:0}.date{font-size:.82rem;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.skill{padding:8px 13px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:.88rem;color:#dbe5fb}
+    .timeline{border-left:1px solid rgba(121,224,210,.4);margin-left:8px;padding-left:25px;display:grid;gap:26px}.timeline-item{position:relative}.timeline-item:before{content:"";position:absolute;left:-31px;top:7px;width:11px;height:11px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px rgba(121,224,210,.1)}
+    .timeline-item h3{margin:0 0 4px}.timeline-item .meta{color:var(--accent2);font-size:.88rem;margin-bottom:9px}.timeline-item p{color:var(--muted);margin:0;max-width:800px}
+    .education{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu-card{padding:24px;border-radius:17px;background:var(--panel);border:1px solid var(--line)}
+    .contact{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:34px;border-radius:22px;background:linear-gradient(120deg,rgba(121,224,210,.1),rgba(139,167,255,.09));border:1px solid var(--line)}
+    .contact h2{margin-top:0}.contact p{color:var(--muted);margin-bottom:0}.contact-links{display:flex;flex-wrap:wrap;gap:10px}
+    footer{padding:28px 0;color:var(--muted);font-size:.84rem;display:flex;justify-content:space-between;gap:15px}
+    .note{font-size:.82rem;color:var(--muted);margin-top:15px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:75px 0;gap:35px}.hero-card{max-width:430px}.section-head{display:block}.section-intro{margin-top:12px}.contact{display:block}.contact-links{margin-top:22px}}
+    @media(max-width:620px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 22px;background:#0e1527;border-bottom:1px solid var(--line);flex-direction:column;gap:14px}.navlinks.open{display:flex}.menu{display:block}.grid,.education{grid-template-columns:1fr}section{padding:60px 0}.wrap{width:min(var(--max),calc(100% - 32px))}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">SASI<span>.</span></a>
+    <button class="menu" aria-label="Toggle navigation" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menu</button>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Software Engineer · Incoming Master's Student</div>
+      <h1>Building reliable software.<br><span class="gradient">Exploring what's next.</span></h1>
+      <p class="lead">I'm Sasi Kiran, a software engineer at BNP Paribas working across automation testing and enterprise software. I’m preparing to pursue an MSc in Computer Science and Engineering at the Technical University of Denmark (DTU).</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work ↘</a>
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="btn" href="assets/Sasi-Kiran-CV.pdf" download>Download CV ↓</a>
+      </div>
+      <p class="note">Add your CV PDF to the <code>assets</code> folder using the filename shown in the button.</p>
+    </div>
+    <aside class="hero-card">
+      <div class="monogram">SK</div>
+      <h3>Sasi Kiran</h3>
+      <p>Software Engineering · Automation · Computer Science</p>
+      <div class="mini"><span>Currently</span><strong>BNP Paribas</strong></div>
+      <div class="mini"><span>Next chapter</span><strong>DTU · Feb 2027</strong></div>
+      <div class="mini"><span>Based in</span><strong>India → Denmark</strong></div>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">A little about me</div><h2>Curious by nature.<br>Engineer by practice.</h2></div>
+        <p class="section-intro">I enjoy solving practical engineering problems, making software more dependable, and learning how emerging technologies can improve the way we build and test systems.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="tag">Professional</div><h3>Software quality & automation</h3><p>Experience creating and maintaining automated tests, validating APIs, and supporting enterprise banking applications in a collaborative development environment.</p></article>
+        <article class="card"><div class="tag">Academic</div><h3>Computer science & AI</h3><p>My interests include backend development, machine learning, computer vision, and intelligent automation—with a focus on useful, dependable applications.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Where I've worked</div><h2>Experience</h2></div><p class="section-intro">Working on software systems where quality, reliability, and careful validation matter.</p></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Associate Software Engineer</h3><div class="meta">BNP Paribas · June 2024 – Present</div>
+          <p>Contribute to automation testing and software validation for enterprise banking applications. Work with Java, Ruby, Selenium, Cucumber/Gherkin, and REST Assured for UI and API testing. Collaborate with teams in an Agile environment and support test automation and application changes.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Software Engineering Intern</h3><div class="meta">BNP Paribas · January 2024 – June 2024</div>
+          <p>Started as an intern and transitioned to a full-time engineering role following the internship.</p>
+        </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Learning journey</div><h2>Education</h2></div></div>
+      <div class="education">
+        <article class="edu-card"><div class="tag">Incoming · February 2027</div><h3>MSc Computer Science and Engineering</h3><p>Technical University of Denmark (DTU)<br>Denmark</p></article>
+        <article class="edu-card"><div class="tag">Completed · 2020-2024</div><h3>B.Tech Computer Science and Engineering</h3><p>SASTRA Deemed University<br>India · CGPA: 8.08/10</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Projects</h2></div><p class="section-intro">A mix of applied machine learning and software engineering projects.</p></div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-top"><span class="tag">Computer Vision · Deep Learning</span><span class="date">2023</span></div>
+          <h3>Pharmaceutical Tablet Defect Detection</h3>
+          <p>Built a machine-vision approach to identify defects in pharmaceutical tablets using a manually annotated image dataset and YOLOv5. Trained the model for 150 epochs and explored practical challenges around data availability and imaging quality.</p>
+          <div class="skills"><span class="skill">Python</span><span class="skill">YOLOv5</span><span class="skill">Computer Vision</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="tag">Networking · Java</span></div>
+          <h3>Network Protocols using Java</h3>
+          <p>Implemented networking concepts and client-server communication using TCP and UDP, exploring how protocol behaviour supports reliable and connectionless data exchange.</p>
+          <div class="skills"><span class="skill">Java</span><span class="skill">TCP / UDP</span><span class="skill">Networking</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="tag">Professional Engineering</span></div>
+          <h3>Enterprise Test Automation</h3>
+          <p>Experience with maintainable automated test scenarios and API validation for banking workflows, using test frameworks and structured behaviour-driven practices.</p>
+          <div class="skills"><span class="skill">Selenium</span><span class="skill">Cucumber</span><span class="skill">REST Assured</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="tag">AI + Test Automation</span></div>
+          <h3>AI-Assisted UI Locator Discovery</h3>
+          <p>Developed a proof-of-concept that uses local AI embeddings and semantic search to identify candidate UI locators from natural language queries. The project combines HTML parsing, Ollama,ChromaDB, and Node.js to simplify locator discovery for UI automation and reduce manual selector identification.</p>
+          <div class="skills"><span class="skill">PlayWright</span><span class="skill">Node.js</span><span class="skill">Ollama</span><span class="skill">ChromaDB</span><span class="skill">Semantic Search</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">My toolkit</div><h2>Skills</h2></div><p class="section-intro">Technologies and practices I have worked with across professional and academic projects.</p></div>
+      <div class="card">
+        <h3>Programming</h3><div class="skills"><span class="skill">Java</span><span class="skill">Python</span><span class="skill">Ruby</span></div>
+        <h3>Testing & APIs</h3><div class="skills"><span class="skill">Selenium</span><span class="skill">PlayWright</span><span class="skill">Cucumber</span><span class="skill">Gherkin</span><span class="skill">REST Assured</span><span class="skill">API Testing</span><span class="skill">Automation Testing</span></div>
+        <h3>Areas of interest</h3><div class="skills"><span class="skill">Backend Development</span><span class="skill">Machine Learning</span><span class="skill">Computer Vision</span><span class="skill">AI-assisted Engineering</span><span class="skill">Software Quality</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div><div class="eyebrow">Let's connect</div><h2>Have an opportunity<br>or an interesting idea?</h2><p>I'm happy to connect about software engineering, research, and student opportunities.</p></div>
+        <div class="contact-links">
+          <!-- Replace placeholder links below with your actual profiles and email. -->
+          <a class="btn primary" href="mailto:sasikiransaladi786@gmail.com">Email me ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/sasi-kiran-189397272" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/sasikiransaladi786" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Sasi Kiran</span><span>Designed with care · Built for the web</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));</script>
+</body>
+</html>
